@@ -6,14 +6,10 @@ class Enru_MadeBy_ByController extends Mage_Core_Controller_Front_Action {
 		$manufacturer = filter_var($this->getRequest()->getParam('manufacturer'));
 
 		$this->loadLayout();
-
-		$update = $this->getLayout()->getUpdate();
-		$update->addHandle('enrumadeby_by');
-		$this->loadLayoutUpdates();
-		$this->generateLayoutXml()->generateLayoutBlocks();
-
 		$this->renderLayout();
+
 		//Zend_Debug::dump($this->getLayout()->getUpdate()->getHandles());
+		//Zend_Debug::dump($manufacturer);
 	}
 
 	public function __call($method, $arg) {

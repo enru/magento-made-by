@@ -13,6 +13,11 @@
                  <class>Enru_MadeBy_Block</class>
             </enrumadeby>
         </blocks>
+        <models>
+            <enrumadeby>
+                 <class>Enru_MadeBy_Model</class>
+            </enrumadeby>
+        </models>
    </global>
 
     <frontend>
@@ -30,6 +35,16 @@
 			<enrumadeby><file>enrumadeby.xml</file></enrumadeby>
 		</updates>
 	</layout>
+	<events>
+		<controller_action_layout_load_before>
+			<observers>
+				<enrumadeby_update_layout_handle>
+					<class>enrumadeby/observer</class>
+					<method>addLayoutUpdate</method>
+				</enrumadeby_update_layout_handle>
+			</observers>
+		</controller_action_layout_load_before>
+	</events>
     </frontend>
 
     <default>
