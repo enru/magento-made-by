@@ -1,0 +1,9 @@
+<?php
+$manufacturer = filter_var($this->getRequest()->getParam('manufacturer'));
+?>
+<div class="layout">
+	<section role="content" class="content-section">
+		<h1 class="category-title"><?php echo $this->__('Made by'); ?> <?php echo ucfirst($manufacturer); ?></h1>
+		<?php echo $this->getChild('product_list')->setManufacturer($manufacturer)->toHtml();  ?>
+	</section>
+</div>

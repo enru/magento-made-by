@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Enru_MadeBy>
+            <codePool>local</codePool>
+            <active>true</active>
+            <depends>
+                <Mage_Catalog/>
+            </depends>
+        </Enru_MadeBy>
+    </modules>
+</config>

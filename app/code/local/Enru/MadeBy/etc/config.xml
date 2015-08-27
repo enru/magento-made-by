@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<config>
+
+    <modules>
+        <Enru_MadeBy>
+            <version>0.1.0</version>
+        </Enru_MadeBy>
+    </modules>
+
+    <global>
+        <blocks>
+            <enrumadeby>
+                 <class>Enru_MadeBy_Block</class>
+            </enrumadeby>
+        </blocks>
+   </global>
+
+    <frontend>
+        <routers>
+            <enrumadeby>
+                <use>standard</use>
+                <args>
+                    <module>Enru_MadeBy</module>
+                    <frontName>made</frontName>
+                </args>
+            </enrumadeby>
+        </routers>
+	<layout>
+		<updates>
+			<enrumadeby><file>enrumadeby.xml</file></enrumadeby>
+		</updates>
+	</layout>
+    </frontend>
+
+    <default>
+        <enrumadeby>
+        </enrumadeby>
+    </default>
+
+
+</config>
