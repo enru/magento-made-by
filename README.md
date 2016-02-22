@@ -16,7 +16,7 @@ This is due to the magic method used in app/code/local/Enru/MadeBy/controllers/B
 	
 Contributions are welcome that use more a modern router for dynamic methods.
 
-If you don't have a lot of brands/manufacturers, a work around for v1.9 using the current code is to add you own methods instead of relying on the __call() method.
+If you don't have a lot of brands/manufacturers, a work around for v1.9 using the current code is to add you own methods instead of relying on the __call() method to the Enru_MadeBy_ByController controller.
 
 e.g. for the url http://www.example.com/made/by/acme
 
