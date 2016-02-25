@@ -18,6 +18,11 @@
                  <class>Enru_MadeBy_Model</class>
             </enrumadeby>
         </models>
+        <helpers>
+            <enrumadeby>
+                 <class>Enru_MadeBy_Helper</class>
+            </enrumadeby>
+        </helpers>
    </global>
 
     <frontend>
