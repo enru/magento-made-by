@@ -23,6 +23,16 @@
                  <class>Enru_MadeBy_Helper</class>
             </enrumadeby>
         </helpers>
+        <events>
+            <controller_front_init_routers>
+                <observers>
+                    <cms>
+                        <class>enrumadeby/router</class>
+                        <method>initControllerRouters</method>
+                    </cms>
+                </observers>
+            </controller_front_init_routers>
+        </events>
    </global>
 
     <frontend>

@@ -12,19 +12,10 @@ class Enru_MadeBy_ByController extends Mage_Core_Controller_Front_Action {
 		//Zend_Debug::dump($manufacturer);
 	}
 
-    public function getActionMethodName($action)
-    {
-		if(Mage::helper('enrumadeby')->manufacturerExists($action)) {
-            $action = 'default';
-		}
-        return $action . 'Action';
-    }
-
-	public function defaultAction() {
-        $manufacturer = $this->getRequest()->getActionName();
-        $this->getRequest()->setParam('manufacturer', $manufacturer);
+	public function listAction() {
         $this->indexAction();
 	}
+
 
 }
 

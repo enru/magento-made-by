@@ -7,10 +7,12 @@
 		<action method="setTemplate"><template>page/1column.phtml</template></action>
 	</reference>
 
+<!--
 	<remove name="left"/>
-
+-->
         <reference name="content">
 		<block type="core/template" name="madeby" template="enrumadeby/product/list.phtml">
+
 			<block type="enrumadeby/product_list" name="product_list" template="catalog/product/list.phtml">
 				<block type="catalog/product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml">
 					<block type="page/html_pager" name="product_list_toolbar_pager"/>
