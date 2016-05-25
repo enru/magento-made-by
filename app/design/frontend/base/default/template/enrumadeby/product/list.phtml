@@ -1,5 +1,6 @@
 <?php
 $manufacturer = filter_var($this->getRequest()->getParam('manufacturer'));
+$manufacturer = preg_replace('/-/', ' ', $manufacturer);
 ?>
 <div class="layout">
 	<section role="content" class="content-section">
