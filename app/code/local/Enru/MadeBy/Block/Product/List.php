@@ -35,6 +35,8 @@ class Enru_MadeBy_Block_Product_List extends Mage_Catalog_Block_Product_List
 	// custom filter
 	if($manufacturer = $this->getManufacturer()) {
 
+        $manufacturer = preg_replace('/-/', ' ', $manufacturer);
+
 		$manufacturerAttribute = Mage::getModel('catalog/entity_attribute')
 		->loadByCode(Mage_Catalog_Model_Product::ENTITY, 'manufacturer');
 

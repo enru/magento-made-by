@@ -3,6 +3,9 @@
 class Enru_MadeBy_Helper_Data  extends Mage_Core_Helper_Abstract {
 
     public function manufacturerExists($manufacturer) {
+
+        $manufacturer = preg_replace('/-/', ' ', $manufacturer);
+
         $attribute = Mage::getModel('eav/entity_attribute')
         ->loadByCode('catalog_product', 'manufacturer');
 
